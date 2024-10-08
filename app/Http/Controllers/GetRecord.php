@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class GetRecord extends Controller
 {
-    public static function get($get) {
-         return DB::table("users") ->where("id", $id) ->get();
+    public static function all($get) {
+         return DB::table("users")->get();
     }
 }
